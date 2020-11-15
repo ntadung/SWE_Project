@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+
+  <!-- This element is added by Laravel -->
+  <form>
+    <h1>Edit Profile</h1>
+    <hr>
+
+    <div class="row">
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+
+          <img src="" class="avatar img-circle" alt="avatar">
+          <h6>Upload your photo...</h6>
+
+          <input type="file" name="profImage">
+          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        </div>
+      </div>
+
+      <!-- edit form column -->
+      <div class="col-md-7 personal-info">
+
+        <h3>User information</h3>
+
+        <!-- Change this to a <form> to reproduce your original issue -->
+        <div class="form-horizontal" role="form">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">First name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" name="fname" type="text" value="First name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Last name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" name="lname" type="text" value="Last name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">User ID:</label>
+            <div class="col-lg-8">
+              <input class="form-control" name="UserID" type="text" value="User ID" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input class="form-control" name="email" type="text" value="Email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Phone number:</label>
+            <div class="col-lg-8">
+              <input class="form-control" name="Phone" type="text" value="Phone number" >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Address:</label>
+            <div class="col-lg-8">
+              <input class="form-control" name="Address" type="text" value="Address">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input type="submit" class="btn btn-primary" value="Save Changes">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<hr>
+</form>
+</div>
+    </body>
+</html>
